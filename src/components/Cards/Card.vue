@@ -50,8 +50,8 @@ import CustomButton from '../Buttons/Button.vue'
     width: 354px;
     height: 480px;
     /* // padding-top: 20px; */
-
-    position: relative;
+    /* margin-bottom: 250px; */
+    /* position: relative; */
     /* margin-bottom: 20px; */
     /* display: flex; */
     /* flex-flow: column; */
@@ -71,7 +71,7 @@ import CustomButton from '../Buttons/Button.vue'
         height: 250px;
 
         /* gap: 0%; */
-        margin-bottom: 100px;
+        margin-bottom: 150px;
 
     }
 

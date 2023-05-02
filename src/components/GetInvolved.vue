@@ -6,7 +6,7 @@ import CustomButton from './Buttons/Button.vue'
 <template>
     <div class="hero-image">
         <div class="container" style="padding:78px 0;">
-            <div class="row mt-4">
+            <div class="row mt-4 d-flex justify-content-center">
                 <div class="hero-text w-100">
                     <div class="C49 white" style="margin-bottom: 16px;max-width: 880px;">
                         We are always looking to expand our team. If you are a GIS Specialist we would love to work with

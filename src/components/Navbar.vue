@@ -73,57 +73,53 @@ export default {
             </ul>
           </li> -->
           <MyDropdown buttonText="About Us">
-            <div class="M20 primary-500">About Us</div>
-            <router-link to="/about">About GRMI</router-link>
+            <div class="M20 primary-500 nav-dropdown-heading">About Us</div>
 
+            <router-link to="/about">About GRMI</router-link>
             <router-link to="/team">Team</router-link>
             <router-link to="/news-and-media">News and Media</router-link>
-
-            <!-- <a class="custom-dropdown-item" href="#">Team</a> -->
-            <!-- <a class="custom-dropdown-item" href="#">News and Media</a> -->
-            <a class="custom-dropdown-item" href="#">Careers</a>
+            <router-link to="/">Careers</router-link>
           </MyDropdown>
 
           <MyDropdown buttonText="Services">
+            <div class="M20 primary-500 nav-dropdown-heading">Services</div>
 
-            <a class="custom-dropdown-item" href="#">Item 4</a>
-            <a class="custom-dropdown-item" href="#">Item 5</a>
-            <a class="custom-dropdown-item" href="#">Item 6</a>
+            <router-link to="/">Software</router-link>
+            <router-link to="/">Consultancy</router-link>
+            <router-link to="/">Research and Development</router-link>
+            <router-link to="/">Data Collection/Intelligence</router-link>
           </MyDropdown>
 
           <MyDropdown buttonText="Projects">
-            <div class="M20 primary-500">Projects</div>
+            <div class="M20 primary-500 nav-dropdown-heading">Projects</div>
             <router-link to="/completed-projects">Completed</router-link>
             <router-link to="/">Proposed</router-link>
             <router-link to="/">Ongoing</router-link>
-
-            <!-- <a class="custom-dropdown-item" href="#">Item 4</a>
-            <a class="custom-dropdown-item" href="#">Item 5</a>
-            <a class="custom-dropdown-item" href="#">Item 6</a> -->
           </MyDropdown>
 
           <MyDropdown buttonText="Data">
-            <a class="custom-dropdown-item" href="#">Item 4</a>
-            <a class="custom-dropdown-item" href="#">Item 5</a>
-            <a class="custom-dropdown-item" href="#">Item 6</a>
+            <div class="M20 primary-500 nav-dropdown-heading">Data</div>
+
+            <router-link to="/">Portal</router-link>
+            <router-link to="/">Dashboard</router-link>
           </MyDropdown>
 
           <MyDropdown buttonText="Partners">
-            <a class="custom-dropdown-item" href="#">Item 4</a>
-            <a class="custom-dropdown-item" href="#">Item 5</a>
-            <a class="custom-dropdown-item" href="#">Item 6</a>
+            <div class="M20 primary-500 nav-dropdown-heading">Partners</div>
+
+            <router-link to="/">Commercial Partners</router-link>
+            <router-link to="/">Research Partners</router-link>
+            <router-link to="/">Local Partners</router-link>
+            <router-link to="/">Regions: NG, GH</router-link>
           </MyDropdown>
 
           <MyDropdown buttonText="Knowledge">
+            <div class="M20 primary-500 nav-dropdown-heading">Knowledge</div>
+
             <router-link to="/insights">Insights</router-link>
             <router-link to="/">Events</router-link>
             <router-link to="/">Research Papers</router-link>
           </MyDropdown>
-
-
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li> -->
         </ul>
 
         <CustomButton class="M16 white btn-success" btn-text="View Water Level" type="success" size="lg" />
@@ -132,7 +128,6 @@ export default {
       </div>
     </div>
   </nav>
-  <!-- <router-view /> -->
 </template>
 
 <style scoped>
@@ -141,18 +136,24 @@ export default {
 }
 
 .navbar-nav a {
-  color: black;
+  color: #9EDBC8;
   display: block;
+  margin-top: 16px;
 }
 
 .navbar-nav a:hover {
-  color: green;
+  color: #2DB187;
+}
+
+.nav-dropdown-heading {
+  margin-bottom: 32px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
 
 /* .custom-dropdown-item */
 
