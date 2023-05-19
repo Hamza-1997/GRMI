@@ -1,12 +1,15 @@
-<script setup>
-// import Button from './Buttons/Button.vue'
-
+<script>
+export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    }
+  }
+}
 </script>
 
 <template>
     <!-- Remove the container if you want to extend the Footer to full width. -->
-    <!-- <div class=""> -->
-
     <footer class="text-white text-center text-lg-start footer-container">
         <!-- Grid container -->
         <div class="container">
@@ -15,7 +18,9 @@
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <div>
-                        <img src='../assets/icons/GRMI_logo.png' alt="Responsive image" width="183">
+                        <router-link @click="scrollToTop" to="/">
+                            <img src='../assets/icons/GRMI_logo.png' alt="Responsive image" width="183">
+                        </router-link>
                     </div>
                     <div style="margin-top: 16px;display: inline-flex;">
                         <div style="margin-right: 16px;">
@@ -26,33 +31,46 @@
                         </div>
                     </div>
                 </div>
-                <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
+                <div class="col-lg-2 col-md-3 mb-4 mb-md-0 links-container">
                     <div class="d-flex flex-column" style="margin-right: 12px;">
                         <div class="M20 white" style="font-weight: 700;margin-bottom: 24px;">QUICKLINKS</div>
-                        <span class="M16 white">
-                            About GRMI
-                        </span>
-                        <span class="M16 white">
-                            Team
-                        </span>
-                        <span class="M16 white">
-                            News and Media
-                        </span>
-                        <span class="M16 white">
-                            Projects
-                        </span>
-                        <span class="M16 white">
-                            Portal
-                        </span>
-                        <span class="M16 white">
-                            Events
-                        </span>
 
+                        <router-link class="M16 white links" @click="scrollToTop" to="/about" style="margin-bottom: 12px;">
+                                About GRMI
+                        </router-link>
+
+                        <router-link class="M16 white links" @click="scrollToTop" to="/team" style="margin-bottom: 12px;">
+                            <span>
+                                Team
+                            </span>
+                        </router-link>
+
+                        <router-link class="M16 white links text-nowrap" @click="scrollToTop" to="/news-and-media" style="margin-bottom: 12px;">
+                            <span>
+                                News and Media
+                            </span>
+                         </router-link>
+
+                         <router-link class="M16 white links" @click="scrollToTop" to="/completed-projects" style="margin-bottom: 12px;">
+                            <span>
+                                Projects
+                            </span>
+                         </router-link> 
+
+                         <router-link class="M16 white links" @click="scrollToTop" to="/" style="margin-bottom: 12px;">
+                            <span>
+                                Portal
+                            </span>
+                         </router-link> 
+
+                         <router-link class="M16 white links" @click="scrollToTop" to="/">
+                            <span >
+                                Events
+                            </span>
+                         </router-link> 
                     </div>
-
                 </div>
 
                 <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
@@ -70,8 +88,8 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="content" style="text-align: left;">
-                                        <div class="C49 white" style="margin-bottom: 24px;">Subscribe to our
-                                            Newsletter
+                                        <div class="C49 white newsletter-text" style="margin-bottom: 24px;">
+                                            Subscribe to our Newsletter
                                         </div>
                                         <div class="input-group">
                                             <input type="email" class="form-control" placeholder="Enter your email">
@@ -91,7 +109,7 @@
             </div>
             <!--Grid row-->
             <div style="margin-top: 114px;">
-                <div class="M13 white d-flex justify-content-center">
+                <div class="M13 white d-flex justify-content-center mb-3">
                     2023 georiskmap.org© ALL RIGHTS RESERVED
                     <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
                 </div>
@@ -100,34 +118,17 @@
                 </div>
             </div>
         </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
-
-        <!-- Copyright -->
     </footer>
-
-    <!-- </div> -->
-    <!-- End of .container -->
 </template>
 
 <style scoped>
 .footer-container {
-    /* height: 506px; */
     background-color: #134A39;
     padding: 78px 0;
-    /* padding: 78px 120px; */
-    /* justify-content: space-between; */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; */
-    /* margin-top: 65px; */
 }
 
-.newsletter {
-    /* padding: 80px 0; */
-    /* background: #19beda; */
+.newsletter-text {
+    white-space: nowrap;
 }
 
 .newsletter .content {
@@ -154,37 +155,18 @@
     border-radius: 6px;
     background: #1A1A1A;
     margin-top: 16px;
-    /* color: #FCFCFC; */
-    /* font-weight: 600; */
 }
 
-/* .hero-text {
-    padding: 0 40px 0 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+.links-container .links{
+  color: inherit;
+  text-decoration: none;
 }
 
-.hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
+@media (max-width: 1500px) {
+    .newsletter-text {
+        white-space: normal;
+    }
 }
 
-.hero-text button:hover {
-    background-color: #555;
-    color: white;
-} */
+
 </style>

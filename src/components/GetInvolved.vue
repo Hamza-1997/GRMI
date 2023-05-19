@@ -22,12 +22,6 @@ import CustomButton from './Buttons/Button.vue'
                         hazards
                         being experienced in Nigeria and other African countries as a result of Climate change.
                     </p>
-                    <!-- <button>Hire me</button> -->
-                    <!-- <div> -->
-                    <!-- <Button class="M16" button-type="primary" button-text="Get Involved"
-                            style="width: 216px; height: 67px; background-color: #134A39;color: white;margin-right: 20px;"></Button> -->
-
-                    <!-- </div> -->
                 </div>
                 <CustomButton class="M16 btn-success" btn-text="Get Involved" type="success" size="lg" />
             </div>
@@ -38,14 +32,10 @@ import CustomButton from './Buttons/Button.vue'
 <style scoped>
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/get_involved.png');
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    /* height: 94vh; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative; */
     padding: 0 40px 0 40px;
-    /* margin-top: 65px; */
 }
 
 .hero-text {
@@ -54,10 +44,6 @@ import CustomButton from './Buttons/Button.vue'
     align-items: center;
     flex-direction: column;
     text-align: center;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     color: white;
 }
 

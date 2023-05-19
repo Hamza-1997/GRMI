@@ -5,10 +5,6 @@
 <template>
     <div>
         <div class="container-section">
-            <!-- <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={HeroImage} /> -->
-            <!-- <img src='../assets/icons/HeroImage.png' /> -->
-
-            <!-- <HeroImage /> -->
             <div class="container" style="padding:78px 0;">
                 <div class="row mt-4">
 
@@ -41,15 +37,6 @@
 
 .container-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/what_we_do.png');
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    /* position: relative; */
-    /* height: 100vh; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-
-    /* height: 493px; */
-    /* background-image: url(your-image.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

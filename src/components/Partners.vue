@@ -1,25 +1,9 @@
-
-<script>
-// function() {
-// you can remove this if you want, it will stop the carousel transtioning automatically. 
-// $('#myCarousel').carousel({
-//   interval: 1
-// });
-// };
-// const myCarouselElement = document.querySelector('#myCarousel')
-
-// const carousel = new bootstrap.Carousel(myCarouselElement, {
-//   interval: 2000,
-//   touch: false
-// })
-</script>
-
 <template>
   <div>
     <div class="C61 primary-900 w-100 d-flex justify-content-center" style="padding-top: 14px; margin-bottom: 65px;">
       Partners
     </div>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 54px;">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="margin-bottom: 54px;">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
@@ -37,10 +21,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="carousel-item">
-      </div>
-      <div class="carousel-item">
-      </div> -->
         <div class="carousel-item">
           <div class="row">
             <div class="col">

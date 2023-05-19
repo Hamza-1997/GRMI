@@ -1,27 +1,5 @@
 <script setup>
-// import {bootstrap} from 'bootstrap';
 import Card from './Cards/Card.vue'
-// import ArrowRight from '../assets/icons/arow_right.png'
-// import ArrowLeft from '../assets/icons/arow_left.png'
-
-
-
-// export default {
-//     data() {
-//         return {
-//             images: [
-//                 { src: 'https://picsum.photos/id/1015/200/300' },
-//                 { src: 'https://picsum.photos/id/1018/200/300' },
-//                 { src: 'https://picsum.photos/id/1021/200/300' },
-//                 { src: 'https://picsum.photos/id/1022/200/300' },
-//                 { src: 'https://picsum.photos/id/1023/200/300' },
-//                 { src: 'https://picsum.photos/id/1024/200/300' },
-//                 { src: 'https://picsum.photos/id/1025/200/300' },
-//                 { src: 'https://picsum.photos/id/1026/200/300' },
-//             ],
-//         };
-//     }
-// }
 </script>
 
 <template>
@@ -77,17 +55,9 @@ import Card from './Cards/Card.vue'
 
 <style scoped>
 .container-section {
-    /* height: 774px; */
     background-color: #EAF7F3;
-    /* position: relative; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
-/* .images-container {
-    padding: 0 50px;
-} */
 
 @media (max-width: 767px) {
     .images-container {
@@ -117,16 +87,11 @@ import Card from './Cards/Card.vue'
     align-items: center;
     flex-direction: column;
     text-align: center;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
     color: white;
 }
 
 
 .carousel {
-    /* margin: 50px auto; */
     padding: 0 60px;
 }
 
@@ -141,10 +106,6 @@ import Card from './Cards/Card.vue'
         gap: 0%;
 
     }
-
-    /* .container-section {
-        height: 1500px;
-    } */
 
     .carousel {
         margin: 0;

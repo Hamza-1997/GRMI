@@ -9,18 +9,6 @@ import "../assets/styles/App.scss"
     <Navbar />
     <div style="background-color: #EAF7F3;padding: 135px 120px;">
 
-
-        <!-- <div class="images-container">
-            <img class="item" src='../assets/icons/teams 1.png'>
-            <img class="item" src='../assets/icons/teams 2.png'>
-            <img class="item" src='../assets/icons/teams 3.png'>
-            <img class="item" src='../assets/icons/teams 4.png'>
-            <img class="item" src='../assets/icons/teams 5.png'>
-            <img class="item" src='../assets/icons/teams 6.png'>
-            <img class="item" src='../assets/icons/teams 7.png'>
-            <img class="item" src='../assets/icons/teams 8.png'>
-        </div> -->
-
         <div class="demo">
             <div class="container">
                 <div class="row text-center">

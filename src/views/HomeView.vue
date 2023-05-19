@@ -12,31 +12,6 @@ import GetInvolved from '../components/GetInvolved.vue'
 import Footer from '../components/Footer.vue'
 // import "../assets/styles/main.scss"
 import "../assets/styles/App.scss"
-
-
-// const routes = {
-//   '/': Home,
-//   '/about': About
-// }
-
-// export default {
-//   data() {
-//     return {
-//       currentPath: window.location.hash
-//     }
-//   },
-//   computed: {
-//     currentView() {
-//       return routes[this.currentPath.slice(1) || '/'] || NotFound
-//     }
-//   },
-//   mounted() {
-//     window.addEventListener('hashchange', () => {
-//       this.currentPath = window.location.hash
-//     })
-//   }
-// }
-
 </script>
 
 <template>
@@ -55,6 +30,3 @@ import "../assets/styles/App.scss"
 
   </div>
 </template>
-
-
-<style scoped></style>

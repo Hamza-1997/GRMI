@@ -20,14 +20,7 @@
 
 <style scoped>
 .container-section {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/who_we_are_bg_image.png'); */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    /* height: 336px; */
     background-color: #EAF7F3;
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* position: relative; */
     padding: 0 120px 0 120px;
 
 }

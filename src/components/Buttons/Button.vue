@@ -1,8 +1,4 @@
 <template>
-    <!-- <button :class="buttonClass" :type="buttonType" :disabled="disabled" @click="onClick"> -->
-    <!-- <button :type="computedType">
-        {{ btnText }}
-    </button> -->
     <button type="button" class="btn" :class='[computedType, computedOutline, computedSize, computedActive, computeBlock]'
         :style="style">{{ btnText }}</button>
 </template>
@@ -63,9 +59,6 @@ export default {
         computeBlock: function () {
             return this.block === "true" ? "btn-block" : "";
         },
-        // style: function() {
-        //     return this.style
-        // }
     }
 };
 </script>

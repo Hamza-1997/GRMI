@@ -1,31 +1,15 @@
 <script>
-// import WelcomeItem from './WelcomeItem.vue'
-// import DocumentationIcon from './icons/IconDocumentation.vue'
-// import ToolingIcon from './icons/IconTooling.vue'
-// import EcosystemIcon from './icons/IconEcosystem.vue'
-// import CommunityIcon from './icons/IconCommunity.vue'
 import CustomButton from './Buttons/Button.vue'
-
-
 
 export default {
   components: {
     CustomButton,
   },
-  // methods: {
-  //   handleButtonClick() {
-  //     alert('Button clicked!');
-  //   },
-  // },
 };
 </script>
 
 <template>
   <div class="hero-image">
-    <!-- <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={HeroImage} /> -->
-    <!-- <img src='../assets/icons/HeroImage.png' /> -->
-
-    <!-- <HeroImage /> -->
     <div class="container">
 
       <div class="row">
@@ -41,32 +25,13 @@ export default {
               dissemination of Geohazard maps using advanced Geospatial Technology</p>
             <div>
             </div>
-            <!-- <div class="col-lg-3 col-md-6 "> -->
-            <!-- <div> -->
-
-            <!-- <Button class="M16 me-lg-4 me-md-4 me-sm-4 me-xs-0" button-type="primary" button-text="View Water Level"
-              style="width: 216px; height: 67px; background-color: #134A39;color: white;">Test</Button> -->
-
-            <!-- label:"Big Button Label",
-      type:"warning",
-      size:"lg",
-      active:"true",
-      block:"true" -->
-            <!-- </div> -->
           </div>
           <div>
             <CustomButton class="M16 white btn-success" btn-text="View Water Level" type="success" size="lg" />
-            <!-- style="border-radius: 0;background-color: #134A39;border: none;width: 216px;height: 67px;"  -->
-
 
             <CustomButton class="M16 btn-outline" btn-text="View Dashboard" type="outline-secondary" size="lg"
               style="border-radius: 0;background-color: transparent;width: 216px;height: 67px;color: #EAF7F3;" />
           </div>
-
-          <!-- <CustomButton class="M16 mt-2" button-type="primary" button-text="View Dashboard"
-            style="width: 216px; height: 67px; background-color: transparent;color: white;border: 1px solid white;" /> -->
-
-
         </div>
       </div>
     </div>

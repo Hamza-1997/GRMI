@@ -1,19 +1,5 @@
-<script setup>
-// import WelcomeItem from './WelcomeItem.vue'
-// import DocumentationIcon from './icons/IconDocumentation.vue'
-// import ToolingIcon from './icons/IconTooling.vue'
-// import EcosystemIcon from './icons/IconEcosystem.vue'
-// import CommunityIcon from './icons/IconCommunity.vue'
-// import HeroImage from '../assets/icons/HeroImage.png'
-
-</script>
-
 <template>
     <div class="container-section">
-        <!-- <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={HeroImage} /> -->
-        <!-- <img src='../assets/icons/HeroImage.png' /> -->
-
-        <!-- <HeroImage /> -->
         <div class="container" style="padding:78px 0;">
             <div class="row mt-4">
 

@@ -1,33 +1,5 @@
 <script>
-// export default {
-//   data() {
-//     return {
-//       showDropdown: false
-//     };
-//   },
-//   methods: {
-//     toggleDropdown() {
-//       this.showDropdown = !this.showDropdown;
-//     }
-//   },
-//   mounted() {
-//     const dropdownToggle = document.querySelector('.rotate-arrow');
-//     const defaultArrow = document.querySelector('.rotate-arrow .arrow-default');
-//     const openArrow = document.querySelector('.rotate-arrow .arrow-open');
 
-//     dropdownToggle.addEventListener('show.bs.dropdown', () => {
-//       defaultArrow.style.display = 'none';
-//       openArrow.style.display = 'inline';
-//       this.showDropdown = true;
-//     });
-
-//     dropdownToggle.addEventListener('hide.bs.dropdown', () => {
-//       defaultArrow.style.display = 'inline';
-//       openArrow.style.display = 'none';
-//       this.showDropdown = false;
-//     });
-//   }
-// };
 import MyDropdown from './Dropdowns/Dropdowns.vue';
 import CustomButton from './Buttons/Button.vue';
 
@@ -50,10 +22,6 @@ export default {
         </router-link>
         <!-- </div> -->
       </a>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,17 +29,6 @@ export default {
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
 
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
           <MyDropdown buttonText="About Us">
             <div class="M20 primary-500 nav-dropdown-heading">About Us</div>
 
@@ -154,24 +111,6 @@ a {
   text-decoration: none;
 }
 
-
-/* .custom-dropdown-item */
-
-/* .rotate-arrow .bi-arrow-down {
-  transition: transform 0.3s ease;
-}
-
-.rotate-arrow.show .bi-arrow-down {
-  transform: rotate(180deg);
-} */
-
-/* .dropdown .dropdown-toggle:hover {
-  background-color: transparent;
-} */
-
-/* .dropdown-toggle::after {
-  display: none !important;
-} */
 
 @media (max-width: 767px) {
   .navbar {
